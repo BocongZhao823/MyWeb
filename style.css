@@ -1,7 +1,12 @@
+/*
+Apply for all the html elements
+*/
 *{
   margin: 0;
   padding: 0;
 }
+
+
 
 .header{
   min-height: 100vh;
