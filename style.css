@@ -38,11 +38,14 @@ nav img{
   background-position: center;
   border-radius: 50%;
   /*change position*/
-  position: relative;
-  left: +600px;
-  top: +200px;
+  position: absolute;
+  top:50%;
+  left: 70%;
+  transform: translate(-50%, -70%);
+  text-align: center;
   margin: auto;
 }
+
 
 /*
 buttom style
@@ -106,4 +109,97 @@ The undeline would appear in 0.25s
 */
 .nav-links ul li:hover::after{
   width: 100%;
+}
+
+/*
+When mouse over the buttom
+The coloer of the buttom become weaker
+*/
+.nav-links ul li:hover{
+  opacity: 0.5;
+}
+
+
+
+/*
+Change text position 
+*/
+.text-box{
+width: 90;
+color: #fff;
+position: absolute;
+top:50%;
+left: 40%;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+/*
+Change text size
+*/
+.text-box h1{
+  font-size: 62px;
+}
+
+.text-box p{
+  /*10 from top, 0 from left and right, 4o from bottom*/
+  margin: 10px 10px 40px;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Style all font awesome icons */
+.fa {
+  /*The distance between each row*/
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+/*
+One line under each buttom
+However, this would hidden when I did not click the buttom
+*/
+.fa::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  display: block;
+  margin: auto;
+  transition: 0.25s;
+}
+
+
+/*
+When I put mouse over the buttom
+The undeline would appear in 0.25s
+*/
+.fa:hover::after{
+  width: 100%;
+}
+
+
+/* Add a hover effect*/
+.fa:hover {
+  opacity: 0.5;
+}
+
+
+
+/* Set a specific color for each brand */
+/* Twitter */
+.fa-twitter {
+  color: white;
+}
+
+.fa-github {
+  color: white;
+}
+
+.fa-linkedin {
+  color: white;
 }
