@@ -142,7 +142,7 @@ Change text size
 }
 
 .text-box p{
-  /*10 from top, 0 from left and right, 4o from bottom*/
+  /*10 from top, 0 from left and right, 40 from bottom*/
   margin: 10px 10px 40px;
   font-size: 14px;
   color: #fff;
