@@ -4,17 +4,106 @@ Apply for all the html elements
 *{
   margin: 0;
   padding: 0;
+  /*add google fonts link*/
+  font-family: 'Balsamiq Sans', cursive;
 }
 
 
-
+/*
+Re-size my background picture
+*/
 .header{
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7),
-  url(image/background.jpg));
+  background-image: 
+  /*Only make my background image darker*/
+  linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
+  url(image/background.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
+}
 
+/*
+my photo
+*/
+nav img{
+  /*Re-size */
+  width: 216px;
+  height: 216px;
+  /*make photo fit in css circle*/
+  background: url("image/Artis_photo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  border-radius: 50%;
+  /*change position*/
+  position: relative;
+  left: +600px;
+  top: +200px;
+  margin: auto;
+}
+
+/*
+buttom style
+*/
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/*
+Arrage buttoms to the left of the page
+*/
+.nav-links{
+  flex:1;
+  text-align: left;
+}
+
+
+/*
+Arrange buttoms into one single line
+*/
+.nav-links ul li{
+  list-style:none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+
+/*
+Change font color and size 
+The font is download from google font
+*/
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+
+/*
+One line under each buttom
+However, this would hidden when I did not click the buttom
+*/
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  display: block;
+  margin: auto;
+  transition: 0.25s;
+}
+
+/*
+When I put mouse over the buttom
+The undeline would appear in 0.25s
+*/
+.nav-links ul li:hover::after{
+  width: 100%;
 }
