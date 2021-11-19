@@ -14,6 +14,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
         <!-- Add icon library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--font awesome 4 cdn-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
     </head>
 
     <body>
@@ -27,7 +29,9 @@
                     <img>
                 </a>
                 
-                <div class="nav-links">
+                <div class="nav-links" id="navLinks">
+                    <!--font awesome icon for small screen-->
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <!--Make a new line-->
                         <br>
@@ -38,6 +42,8 @@
                         <li><a href="">CONTACT</a></li>
                     </ul>
                 </div>  
+                <!--font awesome icon for small screen-->
+                <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
             
 
@@ -45,18 +51,96 @@
                 <h1>
                     Bocong Zhao 
                 </h1>
+
                 <p>
                     <br>
                     <a href="https://twitter.com/bocong_zhao" target="_blank" class = "fa fa-twitter"></a>
                     <a href="https://github.com/BocongZhao823" target="_blank" class = "fa fa-github"></a>
                     <a href="https://www.linkedin.com/in/bocong-zhao-a64a671ba/" target="_blank" class = "fa fa-linkedin"></a>
-
                 </p>
+
+                <a href="" class="hero-bth"> Know More </a>
+
+
 
              </div>
 
         </section>
 
+        <!---->
+        <section class="about"> 
+            <h1>
+                About
+            </h1>
+            <p>
+                Something about me
+            </p>
+
+            <div class="row">
+
+                <div class="about-col">
+                    <h3>
+                        Degree
+                    </h3>
+                    <p>
+                        My degree
+                    </p>
+                </div>
+
+                <div class="about-col">
+                    <h3>
+                        Experience
+                    </h3>
+                    <p>
+                        My working Experience
+                    </p>
+                </div>
+
+                <div class="about-col">
+                    <h3>
+                        Volunteer
+                    </h3>
+                    <p>
+                        My volunteer Experience
+                    </p>
+                </div>
+
+                <div class="about-col">
+                    <h3>
+                        Skill
+                    </h3>
+                    <p>
+                        My skills
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--new section blog-->
+        <section>
+            <h1> 
+
+            </h1>
+            <p>
+                
+            </p>
+        </section>
+
+        <!--Java Script for toggle menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
 
     </body>
 
