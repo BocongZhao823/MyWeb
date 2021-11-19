@@ -289,8 +289,12 @@ For small window size
 .about{
   width: 80%;
   margin: auto;
-  text-align: center;
+  text-align: left;
   padding-top: 100px;
+}
+
+.about-head{
+  text-align: center;
 }
 
 h1{
@@ -342,4 +346,16 @@ h3{
   .row{
     flex-direction: column;
   }
+}
+
+/*
+Create link for my projects
+*/
+.item{
+  color: #777;
+}
+
+/* Add a hover effect*/
+.item:hover {
+  opacity: 0.5;
 }
