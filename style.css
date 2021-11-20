@@ -17,8 +17,8 @@ Re-size my background picture
   width: 100%;
   background-image: 
   /*Only make my background image darker*/
-  linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
-  url(image/background.jpg);
+  /*linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),*/
+  url(image/background3.PNG);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -27,24 +27,24 @@ Re-size my background picture
 /*
 my photo
 */
-nav img{
+/*nav img{*/
   /*Re-size */
-  width: 216px;
-  height: 216px;
+  /*width: 216px;
+  height: 216px;*/
   /*make photo fit in css circle*/
-  background: url("image/Artis_photo.jpg");
+  /*background: url("image/Artis_photo.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
-  border-radius: 50%;
+  border-radius: 50%;*/
   /*change position*/
-  position: absolute;
+  /*position: absolute;
   top:50%;
   left: 70%;
   transform: translate(-50%, -70%);
   text-align: center;
   margin: auto;
-}
+}*/
 
 
 /*
@@ -83,7 +83,8 @@ Change font color and size
 The font is download from google font
 */
 .nav-links ul li a {
-  color: #fff;
+  color: black;
+  /*color: #fff;*/
   text-decoration: none;
   font-size: 25px;
 }
@@ -97,7 +98,8 @@ However, this would hidden when I did not click the buttom
   content: '';
   width: 0%;
   height: 2px;
-  background: #fff;
+  background: black;
+  /*background: #fff;*/
   display: block;
   margin: auto;
   transition: 0.25s;
@@ -126,7 +128,8 @@ Change text position
 */
 .text-box{
 width: 90;
-color: #fff;
+color: black;
+/*color: #fff;*/
 position: absolute;
 top:50%;
 left: 40%;
@@ -147,7 +150,8 @@ Change text size
   /*10 from top, 0 from left and right, 40 from bottom*/
   margin: 10px 10px 40px;
   font-size: 14px;
-  color: #fff;
+  color: black;
+  /*color: #fff;*/
 }
 
 
@@ -196,15 +200,15 @@ The undeline would appear in 0.25s
 /* Set a specific color for each brand */
 /* Twitter */
 .fa-twitter {
-  color: white;
+  color: black;
 }
 
 .fa-github {
-  color: white;
+  color: black;
 }
 
 .fa-linkedin {
-  color: white;
+  color: black;
 }
 
 /*
@@ -213,8 +217,8 @@ Create a 'know more' buttom with square bracket
 .hero-bth{
   display: inline-block;
   text-decoration: none;
-  color:#fff;
-  border: 1px solid #fff;
+  color:black;
+  border: 1px solid black;
   padding: 12px 34px;
   font-size: 13px;
   background: transparent;
@@ -259,7 +263,8 @@ For small window size
     /*Create a menu list*/
     .nav-links{
       position:absolute;
-      background:	#E5958E;
+      /*background:	#E5958E;*/
+      background: #7AC7CF;
       height: 100vh;
       width: 200px;
       top: 0;
@@ -273,7 +278,7 @@ For small window size
     /*Make icon visable for small widows */
     nav .fa{
       display: block;
-      color: #fff;
+      color: black;
       margin: 10px;
       font-size: 22px;
       cursor: pointer;
@@ -400,7 +405,6 @@ Create link for my projects
   border:none;
   box-shadow: 0 0 20px #E5958E;
 }
-
 
 
 /*---------Blog--------*/
