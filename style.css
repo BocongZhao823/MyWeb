@@ -259,7 +259,7 @@ For small window size
     /*Create a menu list*/
     .nav-links{
       position:absolute;
-      background:	#FFC0CB;
+      background:	#E5958E;
       height: 100vh;
       width: 200px;
       top: 0;
@@ -285,12 +285,14 @@ For small window size
     }
 }
 
+
+/*-----------------About -------------------*/
 /*About style*/
 .about{
   width: 80%;
   margin: auto;
   text-align: left;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .about-head{
@@ -358,4 +360,55 @@ Create link for my projects
 /* Add a hover effect*/
 .item:hover {
   opacity: 0.5;
+}
+
+
+/*---------Services--------*/
+#servicesnew{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.rownew{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+/*Box property*/
+.boxnew{
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 450px;
+  border:1px solid black;
+  margin: auto;
+  align-items: center;
+  text-align: justify;
+  padding: 10px;
+  border-radius: 15px;
+  background: linear-gradient(to top, #E5958E 50%, white 50%);
+  background-size: 100% 200%;
+  transition: all .5s;
+}
+
+.boxnew:hover{
+  background-position: left bottom;
+  color: #fff;
+  border:none;
+  box-shadow: 0 0 20px #E5958E;
+}
+
+
+
+/*---------Blog--------*/
+.blog{
+  /*Make some space between left & right side*/
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  /*Some space between top*/
+  padding-top: 50px;
 }
